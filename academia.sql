@@ -54,7 +54,7 @@ CREATE TABLE atividade_professor_dia_semana (
     professor_id integer references professor (id),
     dia_semana_id integer references dia_semana (id),
     horario time,
-    primary key (atividade_id, professor_id, dia_semana_id)
+    primary key (atividade_id, professor_id, dia_semana_id, horario)
 );
 
 
